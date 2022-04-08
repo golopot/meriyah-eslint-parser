@@ -1,6 +1,6 @@
 const parser = require("../lib/parser");
 
-q = parser.parse("function f(){}");
+const ast = parser.parse("`a${b}c`");
 
-console.dir(q, { depth: null });
-console.log(q)
+console.dir(ast, { depth: null });
+// console.log(ast)
